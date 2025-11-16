@@ -1,0 +1,16 @@
+<!DOCTYPE html><html><body>
+<h2>Lead Dashboard</h2>
+<table border="1">
+<tr><th>ID</th><th>Name</th><th>Phone</th><th>Interest</th><th>Time</th><th>Chat</th></tr>
+{% for l in leads %}
+<tr>
+<td>{{l.id}}</td>
+<td>{{l.name}}</td>
+<td>{{l.phone}}</td>
+<td>{{l.interest}}</td>
+<td>{{l.timestamp}}</td>
+<td><a href="/chat/{{l.id}}">View Chat</a></td>
+</tr>
+{% endfor %}
+</table>
+</body></html>

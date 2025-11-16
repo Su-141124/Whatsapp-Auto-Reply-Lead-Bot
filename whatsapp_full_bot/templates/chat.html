@@ -1,0 +1,6 @@
+<!DOCTYPE html><html><body>
+<h2>Chat History</h2>
+{% for c in chats %}
+<p><b>{{c.sender}}:</b> {{c.message}} <br> <small>{{c.timestamp}}</small></p>
+{% endfor %}
+</body></html>
